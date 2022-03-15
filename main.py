@@ -4,8 +4,9 @@ from starlette.staticfiles import StaticFiles
 import json
 from pathlib import Path
 from api import weather_api
+from models.location import Location
 from views import home
-from services import openweather_service
+from services import openweather_service, report_service
 
 api = fastapi.FastAPI()
 
